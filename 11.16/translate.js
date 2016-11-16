@@ -72,7 +72,7 @@ var ok = true;
 var fn = function () { };
 var obj = {};
 console.log(`
-数据类型的toSring
+数据类型的toString
 str:${str.toString()}
 num:${num.toString()}
 num2:${num2.toString()}
@@ -97,5 +97,60 @@ var money = parseInt(prompt('请输入你的工资'));
 alert(`
 工资的数据类型:${typeof (money)}`)
 
+var trueTrue = true && true;
+var trueFalse = true && false;
+var falseFalse = falseFalse;
+console.log(`
+trueTrue:${trueTrue}
+trueFalse:${trueFalse}
+falseFalse:${falseFalse}
+`)
+
+var age = 18;
+var isYoung = age < 19 && age > 17;
+console.log(`isYoung:${isYoung}`);
+if (isYoung) {
+    console.log('18岁');
+}
+
+var ok = true;
+var str = 'str';
+console.log(`
+!的使用
+ok:${ok}
+!ok:${!ok}
+!!str=>boolean
+!!str:${!!str}
+`)
+
+
+/**
+ * [isNaN的使用](hrrp://www.baidu.com)
+ */
+console.log(`
+'3f':${isNaN('3f')}
+33:${isNaN(33)}
+'23':${isNaN('23')}
+`)
+
+console.log(`
+trueTrue:${true || true}
+trueFalse:${true || false}
+falseFalse:${false || false}
+`)
+var age = 17;
+if (age > 18 || age < 18) {
+    console.log('toyong')
+}
+
+
+
+var a = 1;
+var b = 2;
+console.log(`${a}+${b}=$(a+b)`);
+
+var age = 19;
+var isYoung = age < 18 ? 'to young to simple' : age;
+console.log(isYoung);
 
 
