@@ -27,9 +27,50 @@
         if(sunBefor>=500){
             sumfter=sumBefore*0.8;
         };
-        alert(sum);
+       
         alert(sumfter);
     }
+
+
+
+
+
+var price = parseFloat(prompt('请输入商品单价'));
+var quantity = parseInt(prompt('请输入购买数量'));
+var received = parseFloat(prompt('请输入收款金额'));
+
+function amount(a, b) {
+    if ((a * b) >= 500) {
+        return (a * b) * 0.8;
+    }
+    return a * b;
+}
+alert(amount(2,3));
+alert(`
+总金额:${amount(price,quantity)}
+找零:${received - amount(price,quantity)}
+`);
+
+var price = parseFloat(prompt('请输入单价'));
+var num = parseFloat(prompt('请输入数量'));
+var total = parenFloat(prompt('请输入总金额'));
+function amount(a,b){
+var amount = a*b;
+   if(total>=amount){
+       if(amount>=500){
+          return amount*0.8;
+
+}
+           else{
+      alert('金额错误');}
+}
+}
+alert(`
+总金额:${amount(price,num)}
+找零:${(total - amount(price,num))}`)
+
+
+
 
 
     </script>
