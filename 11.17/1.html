@@ -4,6 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <script>    
+    // window.onload=function(){
+    //     function box(name,age){
+    //         return "你的名字是："+name+"，你的年龄是："+age;
+    //             };
+    //              alert(box("jim",25));
+                
+    // }
+    window.onload =function(){
+        //定义输入商品的单价
+        var price =parseInt( prompt('请输入商品的单价'));
+        //定义输入商品的数量
+        var num =parseInt( prompt('请输入商品的数量'));
+        //定义输入收款金额
+        var money=parseInt(prompt('请输入收款金额'));
+        //商品的总价
+        var sumBefore = price*num;
+        //找零
+        var diff = money -sum;
+       
+        if(sunBefor>=500){
+            sumfter=sumBefore*0.8;
+        };
+        alert(sum);
+        alert(sumfter);
+    }
+
+
+    </script>
 </head>
 
 <body>
